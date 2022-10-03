@@ -1,0 +1,118 @@
+
+	         HI902 - Titration Report
+
+	Method Name:               12.2 pH test 
+	Time & Date:         14:23 May 23, 2018 
+	Titration ID:                  Ti_00076 
+
+	             Calibration Data
+
+	 Buffer 	Potential 	Efficiency Temp. 
+		        Time and Date          
+	 1.679pH   305.6mV      98.2%   A 23.5低 
+		      13:55 May 23, 2018       
+	 4.010pH   170.9mV     100.1%   A 23.2低 
+		      13:50 May 23, 2018       
+	 7.010pH    -6.3mV      96.7%   A 22.8低 
+		      13:48 May 23, 2018       
+	10.010pH  -177.5mV      96.7%   A 23.2低 
+		      13:52 May 23, 2018       
+
+	          GLP & Meter Information
+	Sample Name:                            
+	Company Name:                           
+	Operator Name:                          
+
+	             Method Parameters
+	Name:                      12.2 pH test
+	Method Revision:                    1.0
+	Titration Type:      Standard Titration
+	Stirrer Configuration:        Stirrer 1
+	Pump Configuration:
+	    Titrant pump:                Pump 1
+	Dosing Type:                    Dynamic
+	    Min Vol:                   0.040 mL
+	    Max Vol:                   0.050 mL
+	    delta E:                   5.000 mV
+	End Point Mode:         Fixed 12.200 pH
+	Pre-Titration Volume:          0.000 mL
+	Pre-Titration Stir Time:         30 Sec
+	Measurement Mode:      Signal Stability
+	    delta E:                     0.1 mV
+	    delta t:                   10.0 Sec
+	    Min wait:                    10 Sec
+	    Max wait:                    30 Sec
+	Electrode Type:                      pH
+	Blank Option:                  No Blank
+	Calculations:      No Formula (mL only)
+	Titrant Name:                 3.0N NaOH
+	Maximum Titrant Volume:       50.000 mL
+	Stirring Speed:                1400 RPM
+	Potential Range:   -2000.0 to 2000.0 mV
+	Volume/Flow Rate:    25 mL / 5.0 mL/min
+	Signal Averaging:            3 Readings
+	Significant Figures:                XXX
+	Linked To:                      No Link
+
+	Final unit is mL.
+
+	mL = V * 1000
+
+	V = volume dispensed in liters.
+
+	  Nr Volume[mL]      mV      pH  Graphic Temp.[C]     Time 
+	   0      0.000    60.1   5.884      0.0 A   21.2 00:00:00 
+	   1      0.050    30.6   6.388      6.4 A   21.2 00:01:12 
+	   2      0.100    -1.1   6.931      6.9 A   21.3 00:01:43 
+	   3      0.140   -28.4   7.411      7.4 A   21.3 00:02:14 
+	   4      0.180   -53.7   7.859      7.9 A   21.3 00:02:45 
+	   5      0.220   -74.6   8.229      8.2 A   21.4 00:03:16 
+	   6      0.260   -92.5   8.546      8.5 A   21.4 00:03:47 
+	   7      0.300  -106.9   8.801      8.8 A   21.4 00:04:17 
+	   8      0.340  -119.2   9.018      9.0 A   21.4 00:04:40 
+	   9      0.380  -130.0   9.209      9.2 A   21.4 00:04:56 
+	  10      0.420  -139.8   9.381      9.4 A   21.4 00:05:11 
+	  11      0.460  -149.1   9.545      9.5 A   21.4 00:05:28 
+	  12      0.500  -158.3   9.709      9.7 A   21.5 00:05:44 
+	  13      0.540  -167.6   9.874      9.9 A   21.5 00:06:01 
+	  14      0.580  -177.4  10.046     10.0 A   21.5 00:06:17 
+	  15      0.620  -187.8  10.231     10.2 A   21.5 00:06:34 
+	  16      0.660  -198.7  10.423     10.4 A   21.5 00:06:50 
+	  17      0.700  -209.6  10.616     10.6 A   21.5 00:07:07 
+	  18      0.740  -219.9  10.798     10.8 A   21.5 00:07:23 
+	  19      0.780  -229.1  10.959     11.0 A   21.5 00:07:41 
+	  20      0.820  -236.6  11.092     11.1 A   21.6 00:07:57 
+	  21      0.860  -242.9  11.203     11.2 A   21.6 00:08:17 
+	  22      0.900  -248.1  11.296     11.3 A   21.6 00:08:36 
+	  23      0.940  -252.8  11.378     11.4 A   21.6 00:08:55 
+	  24      0.984  -257.3  11.458     11.5 A   21.6 00:09:17 
+	  25      1.034  -261.8  11.538     11.5 A   21.6 00:09:39 
+	  26      1.084  -265.9  11.609     11.6 A   21.6 00:09:59 
+	  27      1.134  -269.6  11.675     11.7 A   21.6 00:10:20 
+	  28      1.184  -273.2  11.737     11.7 A   21.7 00:10:41 
+	  29      1.234  -276.3  11.793     11.8 A   21.7 00:11:02 
+	  30      1.284  -279.2  11.843     11.8 A   21.7 00:11:24 
+	  31      1.334  -281.7  11.887     11.9 A   21.7 00:11:46 
+	  32      1.384  -284.0  11.929     11.9 A   21.7 00:12:06 
+	  33      1.434  -286.3  11.967     12.0 A   21.7 00:12:27 
+	  34      1.484  -288.4  12.005     12.0 A   21.8 00:12:48 
+	  35      1.534  -290.5  12.041     12.0 A   21.8 00:13:09 
+	  36      1.584  -292.5  12.077     12.1 A   21.8 00:13:32 
+	  37      1.633  -294.4  12.110     12.1 A   21.8 00:13:52 
+	  38      1.673  -295.8  12.135     12.1 A   21.8 00:14:11 
+	  39      1.713  -297.2  12.159     12.2 A   21.8 00:14:31 
+	  40      1.753  -298.5  12.182     12.2 A   21.8 00:14:52 
+	  41      1.793  -299.7  12.203     12.2 A   21.8 00:15:11 
+
+	             Titration Results
+	Method Name:               12.2 pH test 
+	Time & Date:         14:23 May 23, 2018 
+	Analyte Size:                           
+	End Point Volume:              1.788 mL 
+	pH Fixed End Point:              12.200 
+	Result:                        1.788 mL 
+	Initial & Final pH:     5.884 to 12.203 
+	Titration Duration:       15:13 [mm:ss] 
+	Titration went to Completion 
+
+	Analyst Signature: ____________________

@@ -1,0 +1,9 @@
+Parameter,Value,Units,Description
+IngredientConcentration,50,Percent,Concentration of ingredient in titraiton
+NaClpercent,2,Percent,Percent NaCl in titration
+InitialVolume,0.05,Liter,Initial volume of titration solution
+AcidConc,2,Molar,HCl concentation used for titration
+BaseConc,2,Molar,NaOH concentration used for titration
+MeasuredpH,5.8895,pH,pH of solution before titration
+ModelpH,5.88702666545824,pH,pH estimated by model
+AdjC,-0.01525,Molar,AdjC value (salts of acid or base)
