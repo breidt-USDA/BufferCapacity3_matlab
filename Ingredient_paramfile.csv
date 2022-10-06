@@ -8,7 +8,7 @@ Value,Parameter,Units,Description
 2,LB,pH,SimplexBCPK_DF lower pH range
 0.2,pK_tol,pH,SimplexBCPK_DF pH range for too-similar pK vals
 0,Trim_beg,Int,DriveFit trim off begining to balance end
-0,Trim_end,Int,DriveFit trim off end to balance begining
+2,Trim_end,Int,DriveFit trim off end to balance begining
 0.3,MinGap,Float,Minimum gap in pH for not autofilling BC curve
 0.1,Increment,Float,Increment pH value for gap filling of BC curve
 2,HCl,Normality,Normality of HCl used for titration

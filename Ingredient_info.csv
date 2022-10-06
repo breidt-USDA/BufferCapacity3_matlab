@@ -1,5 +1,5 @@
 Parameter,Value,Units,Description
-IngredientConcentration,50,Percent,Concentration of ingredient in titraiton
+IngredientConcentration,100,Percent,Concentration of ingredient in titraiton
 NaClpercent,2,Percent,Percent NaCl in titration
 InitialVolume,0.05,Liter,Initial volume of titration solution
 AcidConc,2,Molar,HCl concentation used for titration
