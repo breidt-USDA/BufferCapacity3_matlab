@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3068127261" file="C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\BufferCapacity3\Source\BufferCapacity3.prj" location="C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\BufferCapacity3\Source" name="BufferCapacity3" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1048968511" file="C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\BufferCapacity3\Source\BufferCapacity3.prj" location="C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\BufferCapacity3\Source" name="BufferCapacity3" target="target.mlapps" target-name="Package App">
     <param.appname>BufferCapacity3</param.appname>
     <param.authnamewatermark>Fred Breidt</param.authnamewatermark>
     <param.email>Fred.Breidt@usda.gov</param.email>
@@ -35,25 +35,25 @@
       <file>${PROJECT_ROOT}\BufferCapacity3.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\AdjustpKaMonoprotic.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\ABD.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\AdjpKa_AB.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\BetaModel_AB.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\CalcpH_ABT.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\CombineABs.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\Conc2Beta.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\Data2Beta.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\equalBCends.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\FillGaps.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\get_tBetaData.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\GetAdjCT.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\plotABDarea.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\readRPT.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\SCBCfit_area.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\SCBCfit_only.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\showABD.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\SimplexBCPK_DF5.m</file>
-      <file>C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\matlabcode\BC Modeling\splitvec.m</file>
+      <file>${PROJECT_ROOT}\ABD.m</file>
+      <file>${PROJECT_ROOT}\AdjpKa_AB.m</file>
+      <file>${PROJECT_ROOT}\AdjustpKaMonoprotic.m</file>
+      <file>${PROJECT_ROOT}\BetaModel_AB.m</file>
+      <file>${PROJECT_ROOT}\CalcpH_ABT.m</file>
+      <file>${PROJECT_ROOT}\CombineABs.m</file>
+      <file>${PROJECT_ROOT}\Conc2Beta.m</file>
+      <file>${PROJECT_ROOT}\Data2Beta.m</file>
+      <file>${PROJECT_ROOT}\equalBCends.m</file>
+      <file>${PROJECT_ROOT}\FillGaps.m</file>
+      <file>${PROJECT_ROOT}\get_tBetaData.m</file>
+      <file>${PROJECT_ROOT}\GetAdjCT.m</file>
+      <file>${PROJECT_ROOT}\plotABDarea.m</file>
+      <file>${PROJECT_ROOT}\readRPT.m</file>
+      <file>${PROJECT_ROOT}\SCBCfit_area.m</file>
+      <file>${PROJECT_ROOT}\SCBCfit_only.m</file>
+      <file>${PROJECT_ROOT}\showABD.m</file>
+      <file>${PROJECT_ROOT}\SimplexBCPK_DF5.m</file>
+      <file>${PROJECT_ROOT}\splitvec.m</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />
