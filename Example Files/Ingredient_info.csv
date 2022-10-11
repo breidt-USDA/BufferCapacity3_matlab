@@ -5,5 +5,5 @@ InitialVolume,0.05,Liter,Initial volume of titration solution
 AcidConc,2,Molar,HCl concentation used for titration
 BaseConc,2,Molar,NaOH concentration used for titration
 MeasuredpH,5.8895,pH,pH of solution before titration
-ModelpH,5.88702666545824,pH,pH estimated by model
-AdjC,-0.01525,Molar,AdjC value (salts of acid or base)
+ModelpH,5.88339476944086,pH,pH estimated by model
+AdjC,0.0205625,Molar,AdjC value (salts of acid or base)

@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3068127261" file="C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\Current BC Software\BufferCapacity3.prj" location="C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\Current BC Software" name="BufferCapacity3" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3068127261" file="C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\BufferCapacity3\Source\BufferCapacity3.prj" location="C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\BufferCapacity3\Source" name="BufferCapacity3" target="target.mlapps" target-name="Package App">
     <param.appname>BufferCapacity3</param.appname>
     <param.authnamewatermark>Fred Breidt</param.authnamewatermark>
     <param.email>Fred.Breidt@usda.gov</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>BufferCapacity is designed to process titrator data files and generate a buffer capacity model. Output is a database file with BC data.</param.summary>
     <param.description>Input files include two files, an acid titration file and a base titraiton file. Required information includes the concentration of the acid and base used (typically 1 to 2 N), and the initial volume of for the titration sample (typically 50 mL). Output is a binary database file in .mat format, which can be opened in Matlab or by the IngredientDB program. Results include a buffer matrix (conc [M], pK), and a metric of total buffering for the system.</param.description>
-    <param.screenshot>C:\Users\fbreid\AppData\Local\Temp\tp63401ea7_4b57_4e95_9900_a0364a96d405.png</param.screenshot>
+    <param.screenshot />
     <param.version>3.550</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -19,17 +19,17 @@
       <item>6</item>
     </param.products.id>
     <param.products.version>
-      <item>9.12</item>
-      <item>9.3</item>
+      <item>9.13</item>
+      <item>9.4</item>
     </param.products.version>
     <param.platforms />
-    <param.output>${PROJECT_ROOT}</param.output>
+    <param.output>C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\BC3 Windows Gui</param.output>
     <param.guid>e60362c4-f767-4174-b158-27981087eb29</param.guid>
     <unset>
       <param.icon />
       <param.icons />
+      <param.screenshot />
       <param.platforms />
-      <param.output />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\BufferCapacity3.mlapp</file>
@@ -58,11 +58,11 @@
     <fileset.resources />
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects" name="Current BC Software" optional="false">C:\Users\fbreid\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\Current BC Software</file>
+      <file location="C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects" name="BC3 Windows Gui" optional="false">C:\Users\Fred\OneDrive - USDA\fbdatafiles\serverWin\matlab\Projects\BC3 Windows Gui</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2022a</root>
+      <root>C:\Program Files\MATLAB\R2022b</root>
       <toolboxes />
     </matlab>
     <platform>
