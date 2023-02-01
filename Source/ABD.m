@@ -1,6 +1,6 @@
 classdef ABD   %Value class by default (assignment is deep copy)
    %BufferCapacity database class with buffer table and metadata.
-   %Version 220701
+   %Version 230201
    %-----------------------------------------------------------------------
    %     functions: Return ABD objects (except get_BCcurve)
    %     set_abletter - sets a specific ab letter
@@ -45,7 +45,7 @@ classdef ABD   %Value class by default (assignment is deep copy)
       titration_HClconc = 0;     %titration HCl conc (N)
       titration_NaOHconc = 0;    %titration NaOH conc (N)
       parameters = table;        %parameter table: format in BufferCapacity
-      ver = '220701';            %version of ABD class (YYMMDD)
+      ver = '230201';            %version of ABD class (YYMMDD)
    end
    
    methods
@@ -234,8 +234,10 @@ classdef ABD   %Value class by default (assignment is deep copy)
    end
    
    function obj = update_pKs(obj, IS)
-      %use with caution... should this adjust adjC or pH? 
-      obj.buffer_table = AdjpKa_AB(obj.buffer_table,IS); %adjust all pKs 
+      %use with caution... should this adjust adjC or pH?
+      tempAB = obj.buffer_table{:,1:2};
+      modAB = AdjpKa_AB(tempAB,IS); %adjust all pKs
+      obj.buffer_table{:,1:2} = modAB;
       obj = obj.setpH_totBC();            %recalc pH and total BC
    end
 
@@ -254,17 +256,67 @@ classdef ABD   %Value class by default (assignment is deep copy)
       obj = obj.setpH_totBC();            %set pH and tot BC
    end
 
-   function saveABD(obj,filename)
-      %assumes valid filename!
-      ingredient = obj;
-      save(filename,"ingredient");
+   function res = show(obj,trimbool)
+      %trimbool == 1 -> autotrims curve so beta matches for ends
+      %else plots all data
+      res = plotABD(obj,trimbool);
    end
 
-   function res = show(obj)
-      %get results structure and SHOW GRAPH in Matlab
-      %requires showABD and plotABDarea
-      res = showABD(obj);
+function res = write_csv(obj, filename)
+%Write a .csv spreadsheet file with selected data from the ABD struct
+%input is the filename, which should have a .csv extension
+%function returns a true or false indicating if the file was written
+%-------------------------------------------------------------------------
+%write name line: 
+ABDvar = obj;
+res = 1;
+try
+   writelines(ABDvar.name,filename);
+   %prepare and write additional lines:
+   concstr = strcat("Conc",",",num2str(ABDvar.conc));
+   writelines(concstr,filename,'WriteMode','append');
+   adjCstr = strcat("adjC",",",num2str(ABDvar.adjC));
+   writelines(adjCstr,filename,'WriteMode','append');
+   ISstr = strcat("Ionic Str",",",num2str(ABDvar.titration_IS));
+   writelines(ISstr,filename,'WriteMode','append');
+   pHstr = strcat("pH",",",num2str(ABDvar.pH));
+   writelines(pHstr,filename,'WriteMode','append');
+   tBetastr = strcat("tBeta",",",num2str(ABDvar.totalBC));
+   writelines(tBetastr,filename,'WriteMode','append');
+   %if titration data, add acid/base conc and filenames
+   if ABDvar.titration
+      NaOHline = strcat("NaOH Conc",",", ...
+         num2str(ABDvar.titration_NaOHconc),",",...
+         ABDvar.titration_files.NaOH_titration_filename);
+      writelines(NaOHline,filename,"WriteMode","append");
+      HClline = strcat("HCl Conc",",", ...
+         num2str(ABDvar.titration_HClconc),",", ...
+         ABDvar.titration_files.HCl_titration_filename);
+      writelines(HClline,filename,"WriteMode","append");
+   else
+      writelines("No titraton data",filename,...
+         "WriteMode","append");
+      writelines("BC model generated from the buffer table",filename,...
+         "WriteMode","append");
    end
+   %write buffer table
+   writelines("",filename,'WriteMode','append'); %blank line
+   headerstr = strcat("Conc",",","pK",",","a/b");
+   writelines(headerstr,filename,'WriteMode','append');
+   nbuff = size(ABDvar.buffer_table,1);
+   outstr = strings;
+   for i=1:nbuff
+      for j=1:2
+         outstr = strcat(outstr,num2str(ABDvar.buffer_table{i,j}),",");
+      end
+      outstr = strcat(outstr,ABDvar.buffer_table{i,3});
+      writelines(outstr,filename,'WriteMode','append');
+      outstr = strings;
+   end
+catch
+   res = 0;
+end %end of try block
+end %end of function
 
    end %end of methods
 end
