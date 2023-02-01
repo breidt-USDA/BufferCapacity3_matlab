@@ -1,9 +1,17 @@
-Parameter,Value,Units,Description
-IngredientConcentration,100,Percent,Concentration of ingredient in titraiton
-NaClpercent,2,Percent,Percent NaCl in titration
-InitialVolume,0.05,Liter,Initial volume of titration solution
-AcidConc,2,Molar,HCl concentation used for titration
-BaseConc,2,Molar,NaOH concentration used for titration
-MeasuredpH,5.8895,pH,pH of solution before titration
-ModelpH,5.88339476944086,pH,pH estimated by model
-AdjC,0.0205625,Molar,AdjC value (salts of acid or base)
+Ingredient
+Conc,100
+adjC,0.020563
+Ionic Str,0.34247
+pH,5.8834
+tBeta,7.1434
+NaOH Conc,2,EXAMPLE_BASE.RPT
+HCl Conc,2,EXAMPLE_ACID.RPT
+
+Conc,pK,a/b
+0.020325,2.8179,a
+0.016448,4.2782,a
+0.0060207,6.1074,a
+0.0037903,7.3907,b
+0.0050149,8.7148,b
+0.014627,9.7614,b
+0.035796,11.9992,b
